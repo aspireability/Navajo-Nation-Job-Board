@@ -60,12 +60,9 @@ h4 {
     width: 100%;
 }
 
-iframe {
-    height: 90px;
-}
-
 footer {
     width: 100%;
+    background-color: #fecd3e;
 }
 
 .footer {
