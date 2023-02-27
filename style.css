@@ -27,12 +27,13 @@ header {
 
 .header-red {
     background-color: #791914;
-    padding-top: 0px;
-    padding-bottom: 0px;
+    padding-top: 4px;
+    padding-bottom: 4px;
     padding-left: 0px;
     padding-right: 0px;
     display: flex;
-    height: 100px;
+    height: auto;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -40,13 +41,27 @@ header {
 h1 {
     color: white;
     font: 2.875em "Nunito";
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+
+h4 {
+    color: white;
+    font: 1.5em "Nunito";
+    padding: 0px;
+    margin: 0px;
 }
 
 .airtable-embed {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 95%;
+    width: 100%;
+}
+
+iframe {
+    height: 90px;
 }
 
 footer {
@@ -57,4 +72,14 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+
+@media only screen and (max-width: 500px) {
+    h1 {
+        font: 1.875rem "Nunito";
+    }
+    
+    h4 {
+        font: 1rem "Nunito";
+    }
 }
