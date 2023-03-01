@@ -3,8 +3,12 @@
 <head><title>K'o Naaniish Holo</title></head>
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="style.css"/>
-<body>
-
+<body onload="requestDesktopSite()">
+    <script>
+        function requestDesktopSite() {
+    document.getElementsByTagName('meta')['viewport'].content='min-width: 980px;';
+}
+    </script>
     <header>
         <div class="header-blue">
           <div class="header-yellow">
